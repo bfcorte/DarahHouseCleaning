@@ -11,108 +11,77 @@
   <style>.reveal{opacity:0;transform:translateY(12px);transition:all .6s ease}.reveal.visible{opacity:1;transform:translateY(0)}</style>
 </head>
 <body class="min-h-screen bg-[#f5e9dc] text-slate-800">
-  <!-- sprite pode ficar, mas não usamos mais o icon-message -->
+  <!-- sprite -->
   <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
-    <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 2l7 3v5c0 5-3.5 9-7 10-3.5-1-7-5-7-10V5z"/><path d="M9 12l2 2 4-4"/>
-    </symbol>
-    <symbol id="icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/>
-    </symbol>
-    <symbol id="icon-checkcircle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/>
-    </symbol>
-    <symbol id="icon-thumbsup" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M14 9V5a2 2 0 0 0-2-2l-3 7H5a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h7l5-8a2 2 0 0 0-1.8-3H14z"/>
-    </symbol>
-    <symbol id="icon-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 2l3.1 6.3L22 9.3l-5 4.9 1.2 6.8L12 17l-6.2 4 1.2-6.8-5-4.9 6.9-1z"/>
-    </symbol>
-    <symbol id="icon-mappin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11z"/><circle cx="12" cy="10" r="3"/>
-    </symbol>
-    <symbol id="icon-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/>
-    </symbol>
-    <symbol id="icon-door" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="6" y="3" width="12" height="18" rx="1"/><path d="M14 3v18"/><circle cx="13" cy="12" r="1"/>
-    </symbol>
-    <symbol id="icon-brush" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M2 16h10l2 3H4a2 2 0 0 1-2-3z"/><path d="M12 16l6-9 3 2-6 9z"/>
-    </symbol>
-    <symbol id="icon-broom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M3 20h10l2-4H5z"/><path d="M13 16l6-10"/><path d="M18 5l2 1"/>
-    </symbol>
-    <symbol id="icon-calendarcheck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M7 11h10"/><path d="M9 15l2 2 4-4"/>
-    </symbol>
-    <symbol id="icon-bed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M3 7h12a4 4 0 0 1 4 4v6H3z"/><path d="M3 7v10"/>
-    </symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l7 3v5c0 5-3.5 9-7 10-3.5-1-7-5-7-10V5z"/><path d="M9 12l2 2 4-4"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></symbol>
+    <symbol id="icon-checkcircle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></symbol>
+    <symbol id="icon-thumbsup" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a2 2 0 0 0-2-2l-3 7H5a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h7l5-8a2 2 0 0 0-1.8-3H14z"/></symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.1 6.3L22 9.3l-5 4.9 1.2 6.8L12 17l-6.2 4 1.2-6.8-5-4.9 6.9-1z"/></symbol>
+    <symbol id="icon-mappin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="icon-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></symbol>
+    <symbol id="icon-door" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="1"/><path d="M14 3v18"/><circle cx="13" cy="12" r="1"/></symbol>
+    <symbol id="icon-brush" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16h10l2 3H4a2 2 0 0 1-2-3z"/><path d="M12 16l6-9 3 2-6 9z"/></symbol>
+    <symbol id="icon-broom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h10l2-4H5z"/><path d="M13 16l6-10"/><path d="M18 5l2 1"/></symbol>
+    <symbol id="icon-calendarcheck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M7 11h10"/><path d="M9 15l2 2 4-4"/></symbol>
+    <symbol id="icon-bed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h12a4 4 0 0 1 4 4v6H3z"/><path d="M3 7v10"/></symbol>
   </svg>
 
+  <!-- HEADER -->
   <header class="sticky top-0 z-40 border-b border-slate-200/50 backdrop-blur bg-white/80">
-  <div class="max-w-7xl mx-auto px-4 md:px-6 h-16 md:h-20 flex items-center justify-between">
-    <!-- BRAND: logo + wordmark para não parecer “solto” -->
-    <a href="#" class="flex items-center gap-3">
-      <img src="./assets/logo.png"
-           alt="Darah Cleaning"
-           class="h-10 w-10 md:h-12 md:w-12 rounded-xl object-cover ring-1 ring-slate-200 shadow-sm" />
-      <div class="leading-tight">
-        <span class="block text-base md:text-lg font-extrabold text-slate-900">Darah</span>
-        <span class="block text-[11px] md:text-sm text-slate-500 -mt-0.5">House Cleaning</span>
-      </div>
-    </a>
-
-    <!-- BOTÃO MOBILE -->
-    <button id="menuBtn"
-            class="md:hidden inline-flex items-center justify-center rounded-lg px-3 py-2 border border-slate-200 text-slate-700">
-      <span class="sr-only">Open menu</span>
-      <!-- hamburger -->
-      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M4 6h16M4 12h16M4 18h16"/>
-      </svg>
-    </button>
-
-    <!-- NAV DESKTOP -->
-    <nav class="hidden md:flex items-center gap-8 text-base md:text-lg font-medium">
-      <a href="#services" class="hover:text-blue-600">Services</a>
-      <a href="#process" class="hover:text-blue-600">Process</a>
-      <a href="#reviews" class="hover:text-blue-600">Reviews</a>
-      <a href="#faq" class="hover:text-blue-600">FAQ</a>
-      <a href="#contact" class="hover:text-blue-600">Contact</a>
-    </nav>
-
-    <!-- CTA -->
-    <a id="ctaTop"
-       class="hidden md:inline-flex items-center gap-2 rounded-xl px-4 py-2 bg-blue-600 text-white hover:bg-blue-700 transition"
-       href="#">
-      <img src="./assets/whats.png" alt="WhatsApp" class="w-5 h-5 shrink-0" />
-      Get a Quote
-    </a>
-  </div>
-
-  <!-- NAV MOBILE DROPDOWN -->
-  <div id="mobileNav" class="md:hidden hidden border-t border-slate-200 bg-white">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-3 text-sm">
-      <a href="#services" class="py-1">Services</a>
-      <a href="#process" class="py-1">Process</a>
-      <a href="#reviews" class="py-1">Reviews</a>
-      <a href="#faq" class="py-1">FAQ</a>
-      <a href="#contact" class="py-1">Contact</a>
-      <a id="ctaTopMobile"
-         href="#"
-         class="mt-2 inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 bg-blue-600 text-white">
-        <img src="./assets/whats.png" alt="WhatsApp" class="w-5 h-5 shrink-0" />
-        Get a Quote
+    <div class="relative max-w-7xl mx-auto px-4 md:px-6 h-20 flex items-center">
+      <!-- BRAND mobile central -->
+      <a id="mobileBrand" href="#" class="md:hidden absolute left-1/2 -translate-x-1/2 flex flex-col items-center">
+        <img src="./assets/logo.png" alt="Darah Cleaning"
+            class="h-14 w-14 rounded-xl object-cover ring-1 ring-slate-200 shadow-sm" />
+        <span class="text-sm font-extrabold leading-tight -mt-0.5">Darah</span>
+        <span class="text-[11px] text-slate-500 -mt-0.5">House Cleaning</span>
       </a>
-    </div>
-  </div>
-</header>
 
+      <!-- BRAND desktop esquerda -->
+      <a href="#" class="hidden md:flex items-center gap-3">
+        <img src="./assets/logo.png" alt="Darah Cleaning"
+            class="h-12 w-12 rounded-xl object-cover ring-1 ring-slate-200 shadow-sm" />
+        <div class="leading-tight">
+          <span class="block text-lg font-extrabold text-slate-900">Darah</span>
+          <span class="block text-sm text-slate-500 -mt-0.5">House Cleaning</span>
+        </div>
+      </a>
+
+      <!-- NAV desktop central -->
+      <nav class="hidden md:flex absolute inset-x-0 justify-center text-base font-medium">
+        <div class="flex items-center gap-10">
+          <a href="#services" class="hover:text-blue-600">Services</a>
+          <a href="#process"  class="hover:text-blue-600">Process</a>
+          <a href="#reviews"  class="hover:text-blue-600">Reviews</a>
+          <a href="#faq"      class="hover:text-blue-600">FAQ</a>
+          <a href="#contact"  class="hover:text-blue-600">Contact</a>
+        </div>
+      </nav>
+
+      <!-- CTA desktop + botão mobile -->
+      <div class="ml-auto flex items-center gap-3">
+        <a id="ctaTop"
+          class="hidden md:inline-flex items-center gap-2 rounded-xl px-4 py-2 bg-blue-600 text-white hover:bg-blue-700 transition"
+          href="#">
+          <img src="./assets/whats.png" alt="WhatsApp" class="w-5 h-5 shrink-0" />
+          Get a Quote
+        </a>
+        <button id="menuBtn" type="button" aria-expanded="false"
+                class="md:hidden inline-flex items-center justify-center rounded-lg px-3 py-2 border border-slate-200 text-slate-700">
+          <span class="sr-only">Open menu</span>
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
   <section class="relative overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-b from-blue-50/60 to-transparent"></div>
-    <div class="max-w-7xl mx-auto px-4 md:px-6 pt-16 pb-20 grid md:grid-cols-2 gap-12 items-center">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 pt-20 md:pt-16 pb-14 md:pb-20 grid md:grid-cols-2 gap-10 md:gap-12 items-center">
       <div class="reveal">
         <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
           Impeccable Homes, <span class="text-blue-600">Stress-Free</span> Living
@@ -138,7 +107,7 @@
 
       <div class="relative reveal">
         <div class="rounded-3xl overflow-hidden shadow-xl ring-1 ring-slate-200">
-          <img src="./assets/image1.jpg" alt="Bright modern home interior" class="w-full h-[440px] object-cover">
+          <img src="./assets/image1.jpg" alt="Bright modern home interior" class="w-full h-[380px] md:h-[440px] object-cover">
         </div>
         <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow p-4 flex items-center gap-3 ring-1 ring-slate-200">
           <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center"><svg class="w-5 h-5 text-blue-600"><use href="#icon-star"/></svg></div>
@@ -151,6 +120,7 @@
     </div>
   </section>
 
+  <!-- SERVICES -->
   <section id="services" class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 md:px-6">
       <div class="reveal text-center mb-10">
@@ -197,6 +167,7 @@
     </div>
   </section>
 
+  <!-- PROCESS -->
   <section id="process" class="py-16">
     <div class="max-w-6xl mx-auto px-4 md:px-6">
       <div class="reveal text-center mb-10">
@@ -230,6 +201,7 @@
     </div>
   </section>
 
+  <!-- REVIEWS -->
   <section id="reviews" class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 md:px-6">
       <div class="reveal text-center mb-10">
@@ -262,6 +234,7 @@
     </div>
   </section>
 
+  <!-- FAQ -->
   <section id="faq" class="py-16">
     <div class="max-w-5xl mx-auto px-4 md:px-6">
       <div class="reveal text-center mb-10">
@@ -277,7 +250,7 @@
           <summary class="font-semibold cursor-pointer select-none">Are you insured?</summary>
           <p class="text-sm text-slate-600 mt-2">Absolutely. We are licensed and insured for peace of mind.</p>
         </details>
-        <details class="reveal class=rounded-2xl bg-white border border-slate-200 p-5">
+        <details class="reveal rounded-2xl bg-white border border-slate-200 p-5">
           <summary class="font-semibold cursor-pointer select-none">What areas do you cover?</summary>
           <p class="text-sm text-slate-600 mt-2">Greater Orlando: Lake Nona, Winter Garden, Kissimmee, Dr. Phillips and nearby.</p>
         </details>
@@ -289,6 +262,7 @@
     </div>
   </section>
 
+  <!-- CONTACT CTA -->
   <section id="contact" class="py-16">
     <div class="max-w-5xl mx-auto px-4 md:px-6">
       <div class="reveal rounded-3xl bg-gradient-to-tr from-blue-700 to-blue-500 text-white p-10 md:p-14 shadow-lg">
@@ -308,29 +282,107 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="py-10 border-t border-slate-200 bg-white">
     <div class="max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
       <div class="flex items-center gap-3">
-        <img src="./assets/logo.png" class="h-14 md:h-16" alt="Darah logo">
+        <img src="./assets/logo.png" class="h-14 md:h-16 rounded-xl ring-1 ring-slate-200" alt="Darah logo">
         <span class="text-sm text-slate-500">© <span id="year"></span> Darah Cleaning Services</span>
       </div>
       <div class="text-sm text-slate-600">Orlando, FL • <a href="mailto:hello@darahcleaning.com" class="hover:text-blue-600">hello@darahcleaning.com</a></div>
       <div class="flex items-center gap-3">
-        <a className="hover:opacity-80" id="ctaFooterSmall" href="#" aria-label="WhatsApp">
+        <a class="hover:opacity-80" id="ctaFooterSmall" href="#" aria-label="WhatsApp">
           <img src="./assets/whats.png" alt="WhatsApp" class="w-6 h-6">
         </a>
-        <!-- removidos Instagram e Facebook -->
       </div>
     </div>
-  </footer> 
+  </footer>
 
+  <!-- ======= BACKDROP + DRAWER (FORA DO HEADER) ======= -->
+  <!-- BACKDROP: tela cheia, branco, acima de tudo -->
+  <!-- ======= BACKDROP + DRAWER ======= -->
+<!-- BACKDROP: semitransparente (não deixa o site todo branco) -->
+<div id="drawerBackdrop"
+     class="md:hidden fixed inset-0 bg-black/40 hidden z-[999]"></div>
 
-  <script>
-    const wa = 'https://wa.me/13218065340?text=Hi%20Darah!%20I%27d%20like%20a%20cleaning%20estimate.'; // TROQUE PELO SEU NÚMERO
-    ['ctaTop','ctaHero','ctaServices','ctaFooter','ctaFooterSmall'].forEach(id => { const a = document.getElementById(id); if(a) a.href = wa; });
-    document.getElementById('year').textContent = new Date().getFullYear();
-    const o = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && (e.target.classList.add('visible'), o.unobserve(e.target))), {threshold:0.12});
-    document.querySelectorAll('.reveal').forEach(el => o.observe(el));
-  </script>
+<!-- DRAWER: menu branco sobre o backdrop -->
+<aside id="mobileDrawer"
+       class="md:hidden fixed top-0 left-0 h-screen w-80 max-w-[85%] bg-white shadow-2xl border-r border-slate-200
+              -translate-x-full transition-transform duration-300 will-change-transform z-[1000]">
+  <div class="px-5 py-4 border-b border-slate-200 flex items-center gap-3">
+    <img src="./assets/logo.png" alt="Darah" class="h-10 w-10 rounded-lg ring-1 ring-slate-200" />
+    <div class="leading-tight">
+      <span class="block font-bold">Darah</span>
+      <span class="block text-xs text-slate-500 -mt-0.5">House Cleaning</span>
+    </div>
+    <button id="drawerClose" type="button" class="ml-auto p-2 rounded-md hover:bg-slate-100">
+      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M6 6l12 12M18 6l-12 12"/>
+      </svg>
+    </button>
+  </div>
+
+  <nav class="px-5 py-4 text-[15px] space-y-3 overflow-y-auto max-h-[calc(100vh-64px)] font-semibold">
+    <a href="#services" class="block py-1 hover:text-blue-600">Services</a>
+    <a href="#process"  class="block py-1 hover:text-blue-600">Process</a>
+    <a href="#reviews"  class="block py-1 hover:text-blue-600">Reviews</a>
+    <a href="#faq"      class="block py-1 hover:text-blue-600">FAQ</a>
+    <a href="#contact"  class="block py-1 hover:text-blue-600">Contact</a>
+
+    <a id="ctaTopMobile" href="#"
+       class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl px-4 py-3 bg-blue-600 text-white font-semibold hover:bg-blue-700">
+      <img src="./assets/whats.png" alt="WhatsApp" class="w-5 h-5 shrink-0" />
+      Get a Quote
+    </a>
+  </nav>
+</aside>
+
+<script>
+  /* WhatsApp (ajuste o número/mensagem se quiser) */
+  const wa = 'https://wa.me/13218065340?text=Hi%20Darah!%20I%27d%20like%20a%20cleaning%20estimate.';
+  ['ctaTop','ctaHero','ctaServices','ctaFooter','ctaFooterSmall','ctaTopMobile'].forEach(id => {
+    const a = document.getElementById(id); if(a) a.href = wa;
+  });
+
+  /* Ano no footer */
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* Efeito reveal */
+  const o = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && (e.target.classList.add('visible'), o.unobserve(e.target))), {threshold:0.12});
+  document.querySelectorAll('.reveal').forEach(el => o.observe(el));
+
+  /* Drawer mobile */
+  const menuBtn     = document.getElementById('menuBtn');
+  const drawer      = document.getElementById('mobileDrawer');
+  const overlay     = document.getElementById('drawerBackdrop');
+  const closeBtn    = document.getElementById('drawerClose');
+  const mobileBrand = document.getElementById('mobileBrand');
+
+  function openDrawer() {
+    drawer.classList.remove('-translate-x-full');
+    overlay.classList.remove('hidden');          // mostra fundo branco tela toda
+    menuBtn.setAttribute('aria-expanded', 'true');
+    if (mobileBrand) mobileBrand.classList.add('opacity-0','pointer-events-none'); // esconde brand mobile
+    document.body.style.overflow = 'hidden';
+  }
+  function closeDrawer() {
+    drawer.classList.add('-translate-x-full');
+    overlay.classList.add('hidden');
+    menuBtn.setAttribute('aria-expanded', 'false');
+    if (mobileBrand) mobileBrand.classList.remove('opacity-0','pointer-events-none'); // volta brand mobile
+    document.body.style.overflow = '';
+  }
+
+  if (menuBtn && drawer && overlay) {
+    menuBtn.addEventListener('click', openDrawer);
+    overlay.addEventListener('click', closeDrawer);
+    if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+    drawer.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', closeDrawer));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
+  }
+
+  // Suaviza âncoras
+  document.documentElement.style.scrollBehavior = 'smooth';
+</script>
 </body>
 </html>
