@@ -52,20 +52,63 @@
   </svg>
 
   <header class="sticky top-0 z-40 border-b border-slate-200/50 backdrop-blur bg-white/80">
-    <div class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
-      <img src="./assets/logo.png" class="h-16 md:h-20 w-auto" alt="Darah Cleaning Services">
-  <nav class="hidden md:flex items-center gap-8 text-base md:text-lg font-medium">
-        <a href="#services" class="hover:text-blue-600">Services</a>
-        <a href="#process" class="hover:text-blue-600">Process</a>
-        <a href="#reviews" class="hover:text-blue-600">Reviews</a>
-        <a href="#faq" class="hover:text-blue-600">FAQ</a>
-        <a href="#contact" class="hover:text-blue-600">Contact</a>
-      </nav>
-      <a id="ctaTop" class="inline-flex items-center gap-2 rounded-xl px-4 py-2 bg-blue-600 text-white hover:bg-blue-700 transition" href="#">
-        <img src="./assets/whats.png" alt="WhatsApp" class="w-5 h-5"> Get a Quote
+  <div class="max-w-7xl mx-auto px-4 md:px-6 h-16 md:h-20 flex items-center justify-between">
+    <!-- BRAND: logo + wordmark para não parecer “solto” -->
+    <a href="#" class="flex items-center gap-3">
+      <img src="./assets/logo.png"
+           alt="Darah Cleaning"
+           class="h-10 w-10 md:h-12 md:w-12 rounded-xl object-cover ring-1 ring-slate-200 shadow-sm" />
+      <div class="leading-tight">
+        <span class="block text-base md:text-lg font-extrabold text-slate-900">Darah</span>
+        <span class="block text-[11px] md:text-sm text-slate-500 -mt-0.5">House Cleaning</span>
+      </div>
+    </a>
+
+    <!-- BOTÃO MOBILE -->
+    <button id="menuBtn"
+            class="md:hidden inline-flex items-center justify-center rounded-lg px-3 py-2 border border-slate-200 text-slate-700">
+      <span class="sr-only">Open menu</span>
+      <!-- hamburger -->
+      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+    <!-- NAV DESKTOP -->
+    <nav class="hidden md:flex items-center gap-8 text-base md:text-lg font-medium">
+      <a href="#services" class="hover:text-blue-600">Services</a>
+      <a href="#process" class="hover:text-blue-600">Process</a>
+      <a href="#reviews" class="hover:text-blue-600">Reviews</a>
+      <a href="#faq" class="hover:text-blue-600">FAQ</a>
+      <a href="#contact" class="hover:text-blue-600">Contact</a>
+    </nav>
+
+    <!-- CTA -->
+    <a id="ctaTop"
+       class="hidden md:inline-flex items-center gap-2 rounded-xl px-4 py-2 bg-blue-600 text-white hover:bg-blue-700 transition"
+       href="#">
+      <img src="./assets/whats.png" alt="WhatsApp" class="w-5 h-5 shrink-0" />
+      Get a Quote
+    </a>
+  </div>
+
+  <!-- NAV MOBILE DROPDOWN -->
+  <div id="mobileNav" class="md:hidden hidden border-t border-slate-200 bg-white">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-3 text-sm">
+      <a href="#services" class="py-1">Services</a>
+      <a href="#process" class="py-1">Process</a>
+      <a href="#reviews" class="py-1">Reviews</a>
+      <a href="#faq" class="py-1">FAQ</a>
+      <a href="#contact" class="py-1">Contact</a>
+      <a id="ctaTopMobile"
+         href="#"
+         class="mt-2 inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 bg-blue-600 text-white">
+        <img src="./assets/whats.png" alt="WhatsApp" class="w-5 h-5 shrink-0" />
+        Get a Quote
       </a>
     </div>
-  </header>
+  </div>
+</header>
 
   <section class="relative overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-b from-blue-50/60 to-transparent"></div>
