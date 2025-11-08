@@ -11,52 +11,50 @@
   <style>.reveal{opacity:0;transform:translateY(12px);transition:all .6s ease}.reveal.visible{opacity:1;transform:translateY(0)}</style>
 </head>
 <body class="min-h-screen bg-[#f5e9dc] text-slate-800">
+  <!-- sprite pode ficar, mas não usamos mais o icon-message -->
   <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
-  <symbol id="icon-message" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M21 11a8 8 0 1 1-3.3-6.4"/><path d="M21 11a8 8 0 0 1-8 8"/><path d="M3 20l3-1 2 2"/>
-  </symbol>
-  <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M12 2l7 3v5c0 5-3.5 9-7 10-3.5-1-7-5-7-10V5z"/><path d="M9 12l2 2 4-4"/>
-  </symbol>
-  <symbol id="icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/>
-  </symbol>
-  <symbol id="icon-checkcircle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/>
-  </symbol>
-  <symbol id="icon-thumbsup" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M14 9V5a2 2 0 0 0-2-2l-3 7H5a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h7l5-8a2 2 0 0 0-1.8-3H14z"/>
-  </symbol>
-  <symbol id="icon-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M12 2l3.1 6.3L22 9.3l-5 4.9 1.2 6.8L12 17l-6.2 4 1.2-6.8-5-4.9 6.9-1z"/>
-  </symbol>
-  <symbol id="icon-mappin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11z"/><circle cx="12" cy="10" r="3"/>
-  </symbol>
-  <symbol id="icon-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/>
-  </symbol>
-  <symbol id="icon-door" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <rect x="6" y="3" width="12" height="18" rx="1"/><path d="M14 3v18"/><circle cx="13" cy="12" r="1"/>
-  </symbol>
-  <symbol id="icon-brush" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M2 16h10l2 3H4a2 2 0 0 1-2-3z"/><path d="M12 16l6-9 3 2-6 9z"/>
-  </symbol>
-  <symbol id="icon-broom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M3 20h10l2-4H5z"/><path d="M13 16l6-10"/><path d="M18 5l2 1"/>
-  </symbol>
-  <symbol id="icon-calendarcheck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M7 11h10"/><path d="M9 15l2 2 4-4"/>
-  </symbol>
-  <symbol id="icon-bed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M3 7h12a4 4 0 0 1 4 4v6H3z"/><path d="M3 7v10"/>
-  </symbol>
-</svg>
+    <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2l7 3v5c0 5-3.5 9-7 10-3.5-1-7-5-7-10V5z"/><path d="M9 12l2 2 4-4"/>
+    </symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/>
+    </symbol>
+    <symbol id="icon-checkcircle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/>
+    </symbol>
+    <symbol id="icon-thumbsup" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 9V5a2 2 0 0 0-2-2l-3 7H5a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h7l5-8a2 2 0 0 0-1.8-3H14z"/>
+    </symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2l3.1 6.3L22 9.3l-5 4.9 1.2 6.8L12 17l-6.2 4 1.2-6.8-5-4.9 6.9-1z"/>
+    </symbol>
+    <symbol id="icon-mappin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11z"/><circle cx="12" cy="10" r="3"/>
+    </symbol>
+    <symbol id="icon-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/>
+    </symbol>
+    <symbol id="icon-door" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="6" y="3" width="12" height="18" rx="1"/><path d="M14 3v18"/><circle cx="13" cy="12" r="1"/>
+    </symbol>
+    <symbol id="icon-brush" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2 16h10l2 3H4a2 2 0 0 1-2-3z"/><path d="M12 16l6-9 3 2-6 9z"/>
+    </symbol>
+    <symbol id="icon-broom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 20h10l2-4H5z"/><path d="M13 16l6-10"/><path d="M18 5l2 1"/>
+    </symbol>
+    <symbol id="icon-calendarcheck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M7 11h10"/><path d="M9 15l2 2 4-4"/>
+    </symbol>
+    <symbol id="icon-bed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 7h12a4 4 0 0 1 4 4v6H3z"/><path d="M3 7v10"/>
+    </symbol>
+  </svg>
 
   <header class="sticky top-0 z-40 border-b border-slate-200/50 backdrop-blur bg-white/80">
-    <div class="max-w-7xl mx-auto px-4 md:px-6 py-3 flex items-center justify-between">
-      <img src="./assets/logo.svg" class="h-10 w-auto" alt="Darah Cleaning Services">
-      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
+      <img src="./assets/logo.png" class="h-16 md:h-20 w-auto" alt="Darah Cleaning Services">
+  <nav class="hidden md:flex items-center gap-8 text-base md:text-lg font-medium">
         <a href="#services" class="hover:text-blue-600">Services</a>
         <a href="#process" class="hover:text-blue-600">Process</a>
         <a href="#reviews" class="hover:text-blue-600">Reviews</a>
@@ -64,7 +62,7 @@
         <a href="#contact" class="hover:text-blue-600">Contact</a>
       </nav>
       <a id="ctaTop" class="inline-flex items-center gap-2 rounded-xl px-4 py-2 bg-blue-600 text-white hover:bg-blue-700 transition" href="#">
-        <svg class="w-5 h-5"><use href="#icon-message"/></svg> Get a Quote
+        <img src="./assets/whats.png" alt="WhatsApp" class="w-5 h-5"> Get a Quote
       </a>
     </div>
   </header>
@@ -74,14 +72,14 @@
     <div class="max-w-7xl mx-auto px-4 md:px-6 pt-16 pb-20 grid md:grid-cols-2 gap-12 items-center">
       <div class="reveal">
         <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
-          Impeccable Homes, <span class="text-blue-600">Stress‑Free</span> Living
+          Impeccable Homes, <span class="text-blue-600">Stress-Free</span> Living
         </h1>
         <p class="mt-4 text-lg text-slate-700">
-          Professional house cleaning in Orlando. Move‑in/out, deep cleaning, vacation rentals and recurring plans — precise, punctual, insured.
+          Professional house cleaning in Orlando. Move-in/out, deep cleaning, vacation rentals and recurring plans — precise, punctual, insured.
         </p>
         <div class="mt-8 flex flex-wrap gap-4">
           <a id="ctaHero" href="#" class="inline-flex items-center gap-2 rounded-2xl px-6 py-3 bg-blue-600 text-white hover:bg-blue-700 transition text-lg shadow">
-            <svg class="w-5 h-5"><use href="#icon-message"/></svg> WhatsApp Estimate
+            <img src="./assets/whats.png" alt="WhatsApp" class="w-5 h-5"> WhatsApp Estimate
           </a>
           <a href="#services" class="inline-flex items-center rounded-2xl px-6 py-3 border border-slate-300 hover:bg-white/60 backdrop-blur">
             Explore Services
@@ -89,15 +87,15 @@
         </div>
         <ul class="mt-6 text-slate-600 text-sm grid grid-cols-2 gap-2 max-w-md">
           <li class="flex items-center gap-2"><svg class="w-4 h-4 text-blue-600"><use href="#icon-shield"/></svg> Licensed & Insured</li>
-          <li class="flex items-center gap-2"><svg class="w-4 h-4 text-blue-600"><use href="#icon-clock"/></svg> On‑time, Every Time</li>
-          <li class="flex items-center gap-2"><svg class="w-4 h-4 text-blue-600"><use href="#icon-checkcircle"/></svg> Checklist‑Driven</li>
+          <li class="flex items-center gap-2"><svg class="w-4 h-4 text-blue-600"><use href="#icon-clock"/></svg> On-time, Every Time</li>
+          <li class="flex items-center gap-2"><svg class="w-4 h-4 text-blue-600"><use href="#icon-checkcircle"/></svg> Checklist-Driven</li>
           <li class="flex items-center gap-2"><svg class="w-4 h-4 text-blue-600"><use href="#icon-thumbsup"/></svg> Satisfaction Guaranteed</li>
         </ul>
       </div>
 
       <div class="relative reveal">
         <div class="rounded-3xl overflow-hidden shadow-xl ring-1 ring-slate-200">
-          <img src="https://images.unsplash.com/photo-1600585154340-1e53c0f44a53?q=80&w=1974&auto=format&fit=crop" alt="Bright modern home interior" class="w-full h-[440px] object-cover">
+          <img src="./assets/image1.jpg" alt="Bright modern home interior" class="w-full h-[440px] object-cover">
         </div>
         <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow p-4 flex items-center gap-3 ring-1 ring-slate-200">
           <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center"><svg class="w-5 h-5 text-blue-600"><use href="#icon-star"/></svg></div>
@@ -125,7 +123,7 @@
         <div class="reveal rounded-2xl border border-slate-200 p-6 hover:shadow-lg bg-white">
           <div class="w-10 h-10 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center"><svg class="w-6 h-6"><use href="#icon-home"/></svg></div>
           <h3 class="font-semibold text-lg mt-3">Move Out Cleaning</h3>
-          <ul class="text-sm text-slate-600 mt-3 space-y-1"><li>• Deep kitchen & oven</li><li>• Fridge inside</li><li>• Inspection‑ready finish</li></ul>
+          <ul class="text-sm text-slate-600 mt-3 space-y-1"><li>• Deep kitchen & oven</li><li>• Fridge inside</li><li>• Inspection-ready finish</li></ul>
         </div>
         <div class="reveal rounded-2xl border border-slate-200 p-6 hover:shadow-lg bg-white">
           <div class="w-10 h-10 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center"><svg class="w-6 h-6"><use href="#icon-brush"/></svg></div>
@@ -135,22 +133,22 @@
         <div class="reveal rounded-2xl border border-slate-200 p-6 hover:shadow-lg bg-white">
           <div class="w-10 h-10 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center"><svg class="w-6 h-6"><use href="#icon-bed"/></svg></div>
           <h3 class="font-semibold text-lg mt-3">Vacation Home</h3>
-          <ul class="text-sm text-slate-600 mt-3 space-y-1"><li>• Linen change</li><li>• Restock essentials</li><li>• Photo‑ready</li></ul>
+          <ul class="text-sm text-slate-600 mt-3 space-y-1"><li>• Linen change</li><li>• Restock essentials</li><li>• Photo-ready</li></ul>
         </div>
         <div class="reveal rounded-2xl border border-slate-200 p-6 hover:shadow-lg bg-white">
           <div class="w-10 h-10 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center"><svg class="w-6 h-6"><use href="#icon-broom"/></svg></div>
           <h3 class="font-semibold text-lg mt-3">Regular Cleaning</h3>
-          <ul class="text-sm text-slate-600 mt-3 space-y-1"><li>• Weekly/bi‑weekly/monthly</li><li>• Dusting & vacuum</li><li>• Mop hard floors</li></ul>
+          <ul class="text-sm text-slate-600 mt-3 space-y-1"><li>• Weekly/bi-weekly/monthly</li><li>• Dusting & vacuum</li><li>• Mop hard floors</li></ul>
         </div>
         <div class="reveal rounded-2xl border border-slate-200 p-6 hover:shadow-lg bg-white">
           <div class="w-10 h-10 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center"><svg class="w-6 h-6"><use href="#icon-home"/></svg></div>
           <h3 class="font-semibold text-lg mt-3">Residential</h3>
-          <ul class="text-sm text-slate-600 mt-3 space-y-1"><li>• Apartments & houses</li><li>• Eco‑friendly on request</li><li>• Pet‑friendly</li></ul>
+          <ul class="text-sm text-slate-600 mt-3 space-y-1"><li>• Apartments & houses</li><li>• Eco-friendly on request</li><li>• Pet-friendly</li></ul>
         </div>
       </div>
       <div class="text-center mt-10">
         <a id="ctaServices" href="#" class="inline-flex items-center gap-2 rounded-2xl px-6 py-3 bg-blue-600 text-white hover:bg-blue-700 transition text-lg shadow">
-          <svg class="w-5 h-5"><use href="#icon-message"/></svg> Book via WhatsApp
+          <img src="./assets/whats.png" alt="WhatsApp" class="w-5 h-5"> Book via WhatsApp
         </a>
       </div>
     </div>
@@ -164,7 +162,9 @@
       </div>
       <div class="grid md:grid-cols-4 gap-6">
         <div class="reveal rounded-2xl bg-white border border-slate-200 p-6 shadow-sm">
-          <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-700"><svg class="w-5 h-5"><use href="#icon-message"/></svg></div>
+          <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-700">
+            <img src="./assets/whats.png" alt="WhatsApp" class="w-5 h-5">
+          </div>
           <h3 class="font-semibold mt-4">1. Reach Out</h3>
           <p class="text-sm text-slate-600 mt-1">Message us on WhatsApp with your address and preferred date.</p>
         </div>
@@ -176,12 +176,12 @@
         <div class="reveal rounded-2xl bg-white border border-slate-200 p-6 shadow-sm">
           <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-700"><svg class="w-5 h-5"><use href="#icon-broom"/></svg></div>
           <h3 class="font-semibold mt-4">3. We Clean</h3>
-          <p class="text-sm text-slate-600 mt-1">Checklist‑driven, supplies included, insured crew.</p>
+          <p class="text-sm text-slate-600 mt-1">Checklist-driven, supplies included, insured crew.</p>
         </div>
         <div class="reveal rounded-2xl bg-white border border-slate-200 p-6 shadow-sm">
           <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-700"><svg class="w-5 h-5"><use href="#icon-star"/></svg></div>
           <h3 class="font-semibold mt-4">4. Final Check</h3>
-          <p class="text-sm text-slate-600 mt-1">Walk‑through and quick fixes on the spot.</p>
+          <p class="text-sm text-slate-600 mt-1">Walk-through and quick fixes on the spot.</p>
         </div>
       </div>
     </div>
@@ -206,7 +206,7 @@
             <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center"><svg class="w-5 h-5 text-blue-600"><use href="#icon-star"/></svg></div>
             <div><p class="font-semibold">Michael S.</p><p class="text-xs text-slate-500">Winter Garden</p></div>
           </div>
-          <p class="mt-4 text-slate-700">“Turnovers for our rental are always 5‑star ready.”</p>
+          <p class="mt-4 text-slate-700">“Turnovers for our rental are always 5-star ready.”</p>
         </div>
         <div class="reveal rounded-3xl border border-slate-200 p-6 shadow-sm bg-white">
           <div class="flex items-center gap-3">
@@ -228,7 +228,7 @@
       <div class="grid md:grid-cols-2 gap-6">
         <details class="reveal rounded-2xl bg-white border border-slate-200 p-5">
           <summary class="font-semibold cursor-pointer select-none">Do you bring supplies and equipment?</summary>
-          <p class="text-sm text-slate-600 mt-2">Yes, everything is included. Eco‑friendly options available on request.</p>
+          <p class="text-sm text-slate-600 mt-2">Yes, everything is included. Eco-friendly options available on request.</p>
         </details>
         <details class="reveal rounded-2xl bg-white border border-slate-200 p-5">
           <summary class="font-semibold cursor-pointer select-none">Are you insured?</summary>
@@ -257,7 +257,7 @@
           </div>
           <div class="flex md:justify-end">
             <a id="ctaFooter" href="#" class="inline-flex items-center gap-2 rounded-2xl px-6 py-3 bg-white text-blue-700 hover:bg-blue-50 transition text-lg shadow">
-              <svg class="w-5 h-5"><use href="#icon-message"/></svg> WhatsApp Us
+              <img src="./assets/whats.png" alt="WhatsApp" class="w-5 h-5"> WhatsApp Us
             </a>
           </div>
         </div>
@@ -268,20 +268,21 @@
   <footer class="py-10 border-t border-slate-200 bg-white">
     <div class="max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
       <div class="flex items-center gap-3">
-        <img src="./assets/logo.svg" class="h-8" alt="Darah logo">
+        <img src="./assets/logo.png" class="h-14 md:h-16" alt="Darah logo">
         <span class="text-sm text-slate-500">© <span id="year"></span> Darah Cleaning Services</span>
       </div>
       <div class="text-sm text-slate-600">Orlando, FL • <a href="mailto:hello@darahcleaning.com" class="hover:text-blue-600">hello@darahcleaning.com</a></div>
       <div class="flex items-center gap-3">
-        <a class="hover:opacity-80" id="ctaFooterSmall" href="#" aria-label="WhatsApp"><svg class="w-5 h-5"><use href="#icon-message"/></svg></a>
-        <a class="hover:opacity-80" href="#" aria-label="Instagram">📸</a>
-        <a class="hover:opacity-80" href="#" aria-label="Facebook">👍</a>
+        <a className="hover:opacity-80" id="ctaFooterSmall" href="#" aria-label="WhatsApp">
+          <img src="./assets/whats.png" alt="WhatsApp" class="w-6 h-6">
+        </a>
+        <!-- removidos Instagram e Facebook -->
       </div>
     </div>
   </footer>
 
   <script>
-    const wa = 'https://wa.me/14075551234?text=Hi%20Darah!%20I%27d%20like%20a%20cleaning%20estimate.'; // TROQUE PELO SEU NÚMERO
+    const wa = 'https://wa.me/18635574386?text=Hi%20Darah!%20I%27d%20like%20a%20cleaning%20estimate.'; // TROQUE PELO SEU NÚMERO
     ['ctaTop','ctaHero','ctaServices','ctaFooter','ctaFooterSmall'].forEach(id => { const a = document.getElementById(id); if(a) a.href = wa; });
     document.getElementById('year').textContent = new Date().getFullYear();
     const o = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && (e.target.classList.add('visible'), o.unobserve(e.target))), {threshold:0.12});
